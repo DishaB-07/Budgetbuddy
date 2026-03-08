@@ -104,6 +104,20 @@ const AppInner = () => {
       </main>
       {showTxModal && <TransactionModal form={txForm} setForm={setTxForm} onSave={saveTx} onClose={()=>{setShowTxModal(false);setEditTx(null);}} isEdit={!!editTx}/>}
       {showBudgetModal && <BudgetModal form={budgetForm} setForm={setBudgetForm} onSave={saveBudget} onClose={()=>setShowBudgetModal(false)}/>}
+
+      {/* Footer */}
+      <footer style={{
+        textAlign: "center",
+        padding: "20px",
+        marginTop: "40px",
+        borderTop: "1.5px solid #e0e7ff",
+        color: "#94a3b8",
+        fontSize: "13px",
+        fontFamily: "'Plus Jakarta Sans', sans-serif",
+        fontWeight: 500,
+      }}>
+        © 2026 <strong style={{ color: "#6366f1" }}>Disha Borse</strong>. All rights reserved.
+      </footer>
     </div>
   );
 };
